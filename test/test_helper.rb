@@ -21,7 +21,7 @@ wash_out_lib = File.dirname(paths[0])  # Alternate technique: File.dirname(`gem 
 # http://api.rubyonrails.org/classes/AbstractController/Helpers/ClassMethods.html#method-i-helper
 # http://guides.rubyonrails.org/autoloading_and_reloading_constants.html#require-dependency
 # http://guides.rubyonrails.org/autoloading_and_reloading_constants.html#autoload-paths
-ActiveSupport::Dependencies.autoload_paths << "#{wash_out_lib}/../app/helpers"
+# ActiveSupport::Dependencies.autoload_paths << "#{wash_out_lib}/../app/helpers"
 
 $:<< File.expand_path(File.dirname(__FILE__) + '/../lib')
 require 'qbwc'
